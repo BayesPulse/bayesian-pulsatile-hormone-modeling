@@ -1,1 +1,1 @@
-# bayesian-pulsatile-hormone-models
+# bayesian-pulsatile-hormone-modeling
