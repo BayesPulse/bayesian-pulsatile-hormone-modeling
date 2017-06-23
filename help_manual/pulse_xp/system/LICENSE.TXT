@@ -1,0 +1,32 @@
+
+                              NON-PROFIT SOFTWARE LICENSE AGREEMENT
+
+                                         Michael L. Johnson
+                                           P.O. Box 260
+                                           Keswick, VA
+                                           22947
+
+     Software is furnished to the Licensee free, or for a nominal charge, and may only be
+copied, in whole or in part, for use by the Licensee and his/her employees.  The Licensee 
+acknowledges that a copyright exist on this software. Licensee shall not provide or otherwise
+make available the software or any part or copies thereof in any form to any third party, 
+except as may be permitted in writing by the Licensor. No title to or ownership of the 
+software or any modified or unmodified parts is hereby transferred to the Licensee.  The 
+Licensor shall have the right to terminate the license if Licensee fails to comply with these
+license terms and Licensee agrees, upon notice of such termination, to return immediately or 
+destroy the software and all portions and copies thereof.
+
+     The Licensee further agrees that this software will not be used for profit by anyone.  
+This license is extended to allow corporate  (i.e., for profit) users to use the software for 
+internal research purposes only.  It does not allow resale of the software.
+
+     This software is supplied with no stated or implied warranties as to its functionality.  
+The Licensor cannot be held responsible, or liable, for any damages, including but not 
+limited to special, indirect, or consequential, arising out of, or in connection with, the 
+use or performance of the software.
+
+     This agreement shall be governed by and interpreted according to the laws of the 
+Commonwealth of Virginia. 
+
+       NO WARRANTIES ARE EITHER EXPRESSED OR IMPLIED
+

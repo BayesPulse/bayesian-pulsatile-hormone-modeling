@@ -1,0 +1,21 @@
+#CHECKED      "part1"
+#.NOT.CHECKED "part2"
+#ifchecked "part1"
+
+#if.not.checked "part2"
+TEXT part1 AND .NOT.PART2
+#else
+TEXT PART1 AND part2
+#ENDIF
+
+#else
+
+#if.not.checked "part2"
+TEXT .NOT.part1 AND .NOT.PART2
+#else
+TEXT .NOT.PART1 AND part2
+#ENDIF
+
+#ENDIF
+
+CLOSE

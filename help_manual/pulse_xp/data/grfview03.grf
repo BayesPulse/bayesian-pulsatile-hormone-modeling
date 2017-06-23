@@ -1,0 +1,9 @@
+allocate
+5. 7. 
+Pen_size
+ 0.01  
+CHAR_FONT
+~\complexc.CHR 
+TEXT abcdefghijklmnopqrstuvwxyz 
+text ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+CLOSE

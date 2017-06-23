@@ -1,0 +1,9 @@
+ftp> cd pub
+Not connected.
+ftp> ls -al 
+Not connected.
+ftp>  cd pulse_xp
+Not connected.
+ftp> ls 
+Not connected.
+ftp> bye 

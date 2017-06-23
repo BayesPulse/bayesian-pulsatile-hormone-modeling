@@ -1,0 +1,84 @@
+In C:\Users\liuhuay\AppData\Roaming\pulse_xp\data\HORMONE_1.csv,,
+,A,File Handle
+,B,Basal Secretion
+,C,C at T=0 
+,D,Half-Duration i.e. 2.354*SD 
+,E,Half-Life-1 
+,F,Fraction-2 
+,G,Half-Life-2 
+,H,# secretion Events 
+,I,# outliers 
+,J,Total Pulsatile Production 
+,K,Total Production 
+,L,% Pulsatile 
+,M,Mean Data Value 
+,N,Area Under the Data Curve 
+,O,time between secretion and concentration peaks 
+,P,Variance
+,Q,ApEn # MC Cycles 
+,R,ApEn R 
+,S,ApEn(1,R,) 
+,T,Noise Added ApEn(1,R,,) 
+,U,Noise Added ApEn(1,R,,) SD 
+,V,Shuffled ApEn(1,R,,) 
+,W,Shuffled ApEn(1,R,,) SD 
+,X,Ratio ApEn(1,R,,) 
+,Y,Ratio ApEn(1,R,,) SD 
+,Z,Z for ApEn(1,R,,)
+,AA,P for ApEn(1,R,,)
+,AB,ApEn(2,R,) 
+,AC,Noise Added ApEn(2,R,,) 
+,AD,Noise Added ApEn(2,R,,) SD 
+,AE,Shuffled ApEn(2,R,,) 
+,AF,Shuffled ApEn(2,R,,) SD 
+,AG,Ratio ApEn(2,R,,) 
+,AH,Ratio ApEn(2,R,,) SD 
+,AI,Z for ApEn(2,R,,)
+,AJ,P for ApEn(2,R,,)
+,AK,Cosine Period 
+,AL,Cosine Amplitude 
+,AM,Cosine Phase 
+,AN,Cosine Mean 
+,AO,Cosine Slope 
+,AP,Cosine % Remaining 
+,AQ,MDC from PUL2NATV file 
+,AR,%CV from PUL2NATV 
+,AS,Data Interval
+,AT,# Data Points
+,AU,#reps
+,AV,Apparent MDC
+,AW,Apparent CV
+,AX,Mean Log10( Interpulse Interval )
+,AY,S.D. Log10( Interpulse Interval )
+,AZ,Median Log10( Interpulse Interval )
+,BA,Mean Log10( Peak Area )
+,BB,S.D. Log10( Peak Area )
+,BC,Median Log10( Peak Area )
+,BD,Akaike's Information Criterion
+,BE,Akaike's Information Criterion bias-corrected
+,BF,Bayesian Information Criterion
+,BG,Schwartz's Bayesian Criterion
+,,
+In C:\Users\liuhuay\AppData\Roaming\pulse_xp\data\HORMONE_2.csv,,
+,A,File Handle
+,B,Log10( Secretion Event Area )
+,C,Secretion Event Time
+,D,Log10( Previous Interval )
+,E,Log10( Previous Event Area )
+,F,Log10 ( Basal Secretion )
+,G,Log10 ( Secretion SD ) 
+,H,Log10 ( Half-Life-1 )
+,I,Fraction-2 
+,J,Log10 (Half-Life-2 )
+,,
+In C:\Users\liuhuay\AppData\Roaming\pulse_xp\data\HORMONE_3.csv,,
+,A,File Handle
+,B,Log10( InterPulse Interval )
+,C,Interval Start Time
+,D,Log10( Previous Event Area )
+,E,Log10( Previous Interval )
+,F,Log10 ( Basal Secretion )
+,G,Log10 ( Secretion SD ) 
+,H,Log10 ( Half-Life-1 )
+,I,Fraction-2 
+,J,Log10 (Half-Life-2 )
