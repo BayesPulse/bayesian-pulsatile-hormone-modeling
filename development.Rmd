@@ -1,0 +1,111 @@
+
+# Development Plan
+
+
+1. Algorithm incorporation
+    1. Joint pulses
+        1. covariates
+    1. Population model
+        1. covariates
+1. Modularization/refactoring 
+1. Manual/webbook
+1. Package features
+    1. Summary and diagnostic functions
+  
+## Software map
+
+1. Single subject
+    1. Single hormone
+    1. 2 hormones
+    - Options:
+        - Orderstat vs Strauss
+        - Changing baseline??
+1. Population model
+    1. Single hormone
+        - Single group (no covariates)
+        - Covariates (> 1 group)
+            - Choose which parameters to do as a regression (- categorical
+              parameters; - continuous parameters), others under single group
+              assumptions.
+    1. 2 hormones
+        - Single group
+            - non 1-to-1 (imperfect)
+            - - 2 driver (method needed) (what does this mean?)
+        - Covariates (> 1 group)
+            - non 1-to-1, imperfect, ???pamm done (p), need v/nu?? (what does this mean?)
+            - 2 driver (method needed) (what does this mean?)
+
+## Base code versions for github archiving
+
+**All variations**
+
+*Major versions* 
+
+1. Single-subject, single hormone 
+1. Single-subject, associational (2-hormone) 
+1. Population model, single hormone 
+1. Population model, covariates, single hormone 
+1. Population model, associational (2-hormone) hormone 
+1. Population model, covariates, associational (2-hormone) hormone
+
+*Minor versions*
+
+- Fixed baseline vs. change-point baseline vs changing baseline (sinusoidal) 
+- Orderstat vs. Strauss prior on pulse location 
+- Log-normal vs. truncated t prior on mean mass/width 
+    - Only truncated-t going forward 
+- Inverse Wishart vs. half-Cauchy vs. Uniform prior on re\_sd 
+    - Only Uniform prior going forward
+
+*Questions* 
+  
+- Terminology: driver/response OR trigger/response
+
+
+
+#### Summary and diagnostic functions {-}
+
+- `mcmc_trace <- function() {}`
+- `mcmc_posteriors <- function() {}`
+- `mcmc_locations <- function() {}`
+
+
+**STAN and other Bayesian R package functions to implement**
+
+Posterior predicted values/plot
+
+- `rstanarm::posterior_predict()`
+- `rstanarm::ppc_dens_overlay()`
+- `rstanarm::ppc_intervals()`
+
+Posterior densities
+
+- `rstanarm::mcmc_areas()`
+
+
+```{r stanexamples}
+#--------------------------------------------
+# STAN examples
+#   Some examples http://mc-stan.org/bayesplot/
+#--------------------------------------------
+library(bayesplot)
+library(rstanarm)
+library(ggplot2)
+fit        <- stan_glm(mpg ~ ., data = mtcars)
+posterior  <- as.matrix(fit)
+
+plot_title <- ggtitle("Posterior distributions with medians and 80% intervals")
+mcmc_areas(posterior, pars = c("cyl", "drat", "am", "wt"), prob = 0.8) +
+  plot_title
+
+ppc_intervals(y = mtcars$mpg, yrep = posterior_predict(fit), x = mtcars$wt, prob = 0.5) +
+  labs(x = "Weight (1000 lbs)",
+       y = "MPG",
+       title = "50% posterior predictive intervals \nvs observed miles per gallon",
+       subtitle = "by vehicle weight") +
+  panel_bg(fill = "gray95", color = NA) +
+  grid_lines(color = "white")
+
+```
+
+
