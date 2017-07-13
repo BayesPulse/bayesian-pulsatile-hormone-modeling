@@ -7,5 +7,5 @@ library(bookdown)
 # library(bookdown)
 
 bookdown::render_book("index.Rmd")
-#serve_book("index.Rmd")
+serve_book(".")
 

@@ -88,9 +88,13 @@ Posterior densities
 # STAN examples
 #   Some examples http://mc-stan.org/bayesplot/
 #--------------------------------------------
+if (!require(bayesplot)) install.packages("bayesplot")
+if (!require(rstanarm)) install.packages("rstanarm")
+if (!require(ggplot2))  install.packages("ggplot2")
 library(bayesplot)
 library(rstanarm)
 library(ggplot2)
+
 fit        <- stan_glm(mpg ~ ., data = mtcars)
 posterior  <- as.matrix(fit)
 
