@@ -1,0 +1,18 @@
+
+
+# Derivations of posterior distributions
+
+
+## Single-subject
+
+### $\pi(\nu|\cdots)$ -- Standard deviation of the random effects
+
+
+$\begin{align} 
+\pi(\nu_{\alpha} | \cdots) &\propto \pi(\nu_{\alpha}) \pi(\alpha_i | \mu_{\alpha}, \nu_{\alpha}, \vect{\kappa}_{\alpha}) \\
+where,\\
+& \pi(\nu_{\alpha}) \sim Univ(0, a)\\ 
+& \pi(\alpha_i | \mu_{\alpha}, \nu_{\alpha}, \vect{\kappa}_{\alpha}) \sim t^+_4 (\mu_{\alpha}, \frac{\nu^2_{\alpha}}{\vect{\kappa}_{\alpha}})
+
+\end{align}$
+
