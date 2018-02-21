@@ -2,8 +2,6 @@ language: r
 cache: packages
 pandoc_version: 1.19.2.1
 sudo: false
-cache:
-  packages: yes
 
 env:
   global: 
@@ -14,8 +12,6 @@ before_script:
   - chmod +x ./_deploy.sh
 
 script:
-  - "set -x"
   - "./_build.sh"
   - "./_deploy.sh"
-  - "set +x"
 
