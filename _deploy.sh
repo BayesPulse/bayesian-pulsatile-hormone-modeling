@@ -1,20 +1,16 @@
-# Set git config information
-git config --global user.name "Matt Mulvahill"
+#!/bin/sh
+
+set -e
+
+[ -z "${GITHUB_PAT}" ] && exit 0
+[ "${TRAVIS_BRANCH}" != "master" ] && exit 0
+
 git config --global user.email "matthew.mulvahill@ucdenver.edu"
+git config --global user.name "Matt Mulvahill"
 
-# Clone the gh-pages repository
-git clone -b gh-pages \
-    https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git \
-      book-output
-
-# Change to the gh-page clone book-output directory
+git clone -b master https://${GITHUB_PAT}@github.com/bayespulse/bayespulse.github.io.git book-output
 cd book-output
-
-# Copy generated output to book-output
 cp -r ../_book/* ./
-
-# Add all files to the repo
-git add *
-git commit -a -m "Updating book (${TRAVIS_BUILD_NUMBER})"
-git push -q origin gh-pages
-
+git add --all *
+git commit -m"Update the book" || true
+git push -q origin master
