@@ -26,9 +26,9 @@ description: "A guide to Bayesian pulsatile hormone modeling using the `pulsate`
 ---
 
 ```{r include=FALSE}
-# automatically create a bib database for R packages # via tidytext
+# automatically create a bib database for R packages via tidytext
 knitr::write_bib(c(.packages(), 'bookdown', 'knitr', 'rmarkdown'),
-								 'packages.bib')
+                 'packages.bib')
 ```
 
 # Preface {-}
