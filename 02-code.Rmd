@@ -1,0 +1,19 @@
+## Code
+
+Two primary sets of code are suggested for the repository: cleaning and
+analysis scripts. Both should use file naming standards previously mentioned.
+
+- *Require character variables to be either labeled (factors in R or varlabel in SAS) or standardized character strings*
+- *Require variable labels in code-friendly format (CSV table: variable name, variable label; SAS 'label' statement; R dataframe; or REDCap script)*
+- *Indicators/binary variables should be character and labeled (e.g. yes/no).*
+
+- clean01\_readData.R
+- clean02\_wideToLong.R
+- clean03\_formatData.R
+
+- analyze01\_descriptives.R
+- analyze02\_PrimaryOutcomes\_TimeToEvent.R
+- analyze03\_PrimaryOutcomes\_LongitudinalQOL.R
+
+
+

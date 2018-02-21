@@ -1,0 +1,42 @@
+## Stanford University Libraries' "File Naming Best Practices"
+
+via [Stanford Libraries](http://library.stanford.edu/research/data-management-services/data-best-practices/best-practices-file-naming)
+
+The most important things to remember about file naming are to be consistent
+and descriptive in naming and organizing your files so that it’s obvious where
+to find a file and what it contains. 
+
+Information to consider including in file names:
+
+- Project or experiment name or acronym 
+- Location/spatial coordinates 
+- Researcher name/initials 
+- Date or date range of experiment 
+- Type of data 
+- Conditions 
+- Version number of file 
+- Three-letter file extension for application-specific files 
+
+These are suggestions; include whatever information will allow you to
+distinguish your files from each other and clearly indicate to you
+what is in them. 
+
+Other tips for file naming:
+
+- A good format for dates is YYYYMMDD (or YYMMDD). This makes sure all your
+  files stay in chronological order, even over many years. 
+- Don't make file names too long; longer names do not work well with all types
+  of software. 
+- Special characters should be avoided: ~!@#\$%^&\*()\`;<>?,[]{}'" 
+- For sequential numbering, use leading zeros to ensure files sort properly.
+  For example, use "0001, 0002...1001r etc" instead of "1, 2...1001, etc." 
+- Do not use spaces, because they are not recognized by some software. Instead
+  use underscores (file\_name), dashes (file-name), no separation (filename),
+  or camel case (FileName). 
+
+Consider including a README.txt file in your directory that explains your 
+naming convention along with any abbreviations or codes you have used.
+
+
+
+
