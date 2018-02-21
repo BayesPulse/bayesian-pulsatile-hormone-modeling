@@ -31,6 +31,8 @@ knitr::write_bib(c(.packages(), 'bookdown', 'knitr', 'rmarkdown'),
                  'packages.bib')
 ```
 
+# Welcome
+
 <img src="images/predicted.png" width="442" height="372" alt="Cover image" />
 
 
