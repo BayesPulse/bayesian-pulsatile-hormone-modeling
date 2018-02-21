@@ -8,7 +8,7 @@ set -e
 git config --global user.email "matthew.mulvahill@ucdenver.edu"
 git config --global user.name "Matt Mulvahill"
 
-git clone -b master https://${GITHUB_PAT}@github.com/palliativecare/palliativecare.github.io.git book-output
+git clone -b master https://${GITHUB_PAT}@github.com/bayespulse/bayespulse.github.io.git book-output
 cd book-output
 cp -r ../_book/* ./
 git add --all *

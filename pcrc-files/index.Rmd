@@ -1,0 +1,29 @@
+--- 
+title: "PCRC Repository Guidebook"
+author: "Palliative Care Research Cooperative"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This guidebook contains information on submitting study data to the PCRC data repository."
+---
+
+# Introduction
+
+Studies in the PCRC repository have a standardized directory structure and
+minimum set of required associated files.  This document lays out the
+requirements for directory structure and contents.
+
+- Directory structure
+- File naming standards
+- Individual directory standards
+- Individual file content standards
+
+
+## Test sub-chapter
+
+Testing a sub-chapter.
