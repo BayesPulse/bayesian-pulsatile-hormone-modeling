@@ -1,6 +1,6 @@
 --- 
 title: "Bayesian Pulsatile Hormone Modeling with R"
-subtitle: "Some subtitle"
+subtitle: ""
 author: "Nichole E Carlson, Karen Liu, Matthew J Mulvahill, and Ken Horton"
 date: "`r Sys.Date()`"
 knit: "bookdown::render_book"
@@ -31,7 +31,8 @@ knitr::write_bib(c(.packages(), 'bookdown', 'knitr', 'rmarkdown'),
                  'packages.bib')
 ```
 
-# Welcome
+# Welcome {-}
+# Preface {-}
 
 <img src="images/predicted.png" width="442" height="372" alt="Cover image" />
 
